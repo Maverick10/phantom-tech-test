@@ -3,7 +3,7 @@ const fetch = require('node-fetch');
 module.exports = {
 	searchForProduct: async (searchQuery) => {
 		return new Promise((resolve, reject) => {
-			const searchQueryStringParams = new URLSearchParams({
+			const searchQueryStringParams = new URLSearchParams({	// fetching the search results html page
 				q: searchQuery
 			});
 			const searchURL = new URL('https://www.shopdisney.co.uk/search');
@@ -17,7 +17,7 @@ module.exports = {
 		})
 	},
 
-	productDetails: async (href) => {
+	productDetails: async (href) => {		// returns product details html page
 		return new Promise((resolve, reject) => {
 			fetch(href, {
 				method: 'GET',
@@ -28,7 +28,7 @@ module.exports = {
 		})
 	},
 
-	addToCart: async (pid, csrf, cookie) => {
+	addToCart: async (pid, csrf, cookie) => {	// adds given product to cart
 		return new Promise((resolve, reject) => {
 			const url = new URL('https://www.shopdisney.co.uk/on/demandware.' +
 				'store/Sites-disneyuk-Site/en_GB/Cart-AddProduct');

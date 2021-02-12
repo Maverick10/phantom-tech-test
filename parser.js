@@ -13,7 +13,7 @@ module.exports = {
 		return document.getAttribute(attr);
 	},
 
-	getCSRF: async (document) => {
+	getCSRF: async (document) => {	// csrf is found as the value of attribute 'value' in csrftoken class 
 		return document.querySelector('.csrftoken').getAttribute('value');
 	},
 
