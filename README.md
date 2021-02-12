@@ -13,7 +13,7 @@
     - Clone the repository.
     - Navigate to the cloned repo.
     - `$ npm install`.
-    - `$ node palm.js` and follow the execution of the program.
+    - `$ node index.js` and follow the execution of the program.
 
 ### Who do I talk to? ###
 
