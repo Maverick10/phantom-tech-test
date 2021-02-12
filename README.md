@@ -1,2 +1,20 @@
-# phantom-tech-test
-Solution to the test sent by Phantom Tech
+# phantom-tech-test #
+
+### What is this repository for? ###
+
+* Quick summary
+    - This repository was created as a solution to the test sent by Phantom Tech.
+* Version
+    - v1.0.0
+
+### How do I get set up? ###
+
+* Summary of set up
+    - Clone the repository.
+    - `npm install`.
+    - Navigate to the root directory of the cloned repo.            
+    - `node palm.js` and follow the execution of the program.
+
+### Who do I talk to? ###
+
+* a.gamal160@gmail.com
