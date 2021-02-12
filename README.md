@@ -12,7 +12,7 @@
 * Summary of set up
     - Clone the repository.
     - `npm install`.
-    - Navigate to the root directory of the cloned repo.            
+    - Navigate to the cloned repo.            
     - `node palm.js` and follow the execution of the program.
 
 ### Who do I talk to? ###
