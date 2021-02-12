@@ -7,10 +7,9 @@ const rl = readLine.createInterface({
 module.exports = {
     userInput: async (question) => {
         return new Promise((resolve, reject) => {
-            rl.question(question, async (searchQuery) => {
-                console.log(`You entered ${searchQuery}`);
-                rl.close();
-                resolve(searchQuery);
+            rl.question(question, async (answer) => {
+                console.log(`You entered ${answer}`);
+                resolve(answer);
             })
         })
     }
