@@ -15,5 +15,16 @@ module.exports = {
 				.then(response => resolve(response.text()))
 				.catch(err => reject(err))
 		})
+	},
+
+	productDetails: async (href) => {
+		return new Promise((resolve, reject) => {
+			fetch(href, {
+				method: 'GET',
+				redirect: 'follow'
+			})
+				.then(response => resolve(response))
+				.catch(err => reject(err))
+		})
 	}
 }
