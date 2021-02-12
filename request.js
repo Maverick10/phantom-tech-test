@@ -26,5 +26,28 @@ module.exports = {
 				.then(response => resolve(response))
 				.catch(err => reject(err))
 		})
+	},
+
+	addToCart: async (pid, csrf, cookie) => {
+		return new Promise((resolve, reject) => {
+			const url = new URL('https://www.shopdisney.co.uk/on/demandware.' +
+				'store/Sites-disneyuk-Site/en_GB/Cart-AddProduct');
+			const addToCartHeaders = new fetch.Headers();
+			addToCartHeaders.append('Cookie', cookie);
+			const addToCartData = new URLSearchParams({
+				format: 'ajax',
+				Quantity: 1,	// needs to be user input
+				pid: pid,
+				csrf_token: csrf
+			});
+			fetch(url, {
+				method: 'POST',
+				body: addToCartData,
+				headers: addToCartHeaders,
+				redirect: 'follow'
+			})
+				.then(response => resolve(response.text()))
+				.catch(err => reject(err))
+		})
 	}
 }

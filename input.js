@@ -12,5 +12,9 @@ module.exports = {
 				resolve(answer);
 			})
 		})
+	},
+
+	close: () => {
+		rl.close();
 	}
 }

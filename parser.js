@@ -15,5 +15,9 @@ module.exports = {
 
 	getCSRF: async (document) => {
 		return document.querySelector('.csrftoken').getAttribute('value');
+	},
+
+	querySelector: async (document, selector) => {
+		return document.querySelector(selector);
 	}
 }
