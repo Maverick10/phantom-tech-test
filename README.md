@@ -5,7 +5,7 @@
 * Quick summary
     - This repository was created as a solution to the test sent by Phantom Tech.
 * Version
-    - v1.0.0
+    - v1.0.1
 
 ### How do I get set up? ###
 
